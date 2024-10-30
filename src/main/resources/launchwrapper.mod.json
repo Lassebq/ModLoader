@@ -1,0 +1,5 @@
+{
+    "id": "${modid}",
+    "version": "${mod_version}",
+    "sourceNamespace": "${sourceNamespace}"
+}

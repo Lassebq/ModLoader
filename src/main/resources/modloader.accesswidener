@@ -1,0 +1,18 @@
+accessWidener v2 named
+accessible method net/minecraft/crafting/CraftingManager registerShaped (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+accessible method net/minecraft/crafting/CraftingManager registerShapeless (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+accessible field net/minecraft/stat/Stats BY_KEY Ljava/util/Map;
+accessible field net/minecraft/client/render/entity/PlayerEntityRenderer ARMOR_VARIANTS [Ljava/lang/String;
+mutable field net/minecraft/client/render/entity/PlayerEntityRenderer ARMOR_VARIANTS [Ljava/lang/String;
+accessible field net/minecraft/client/Minecraft INSTANCE Lnet/minecraft/client/Minecraft;
+accessible field net/minecraft/entity/Entities KEY_TO_TYPE Ljava/util/Map;
+accessible field net/minecraft/client/Session f_1364632 Ljava/util/List;
+accessible field net/minecraft/client/render/block/entity/BlockEntityRenderDispatcher renderers Ljava/util/Map;
+accessible field net/minecraft/client/render/BlockRenderer sprite I
+accessible method net/minecraft/entity/Entities register (Ljava/lang/Class;Ljava/lang/String;I)V
+accessible method net/minecraft/block/entity/BlockEntity register (Ljava/lang/Class;Ljava/lang/String;)V
+accessible method net/minecraft/world/World onBlockChanged (IIII)V
+accessible method net/minecraft/network/packet/Packet register (IZZLjava/lang/Class;)V
+accessible field net/minecraft/item/PickaxeItem EFFECTIVE_BLOCKS [Lnet/minecraft/block/Block;
+accessible field net/minecraft/item/AxeItem EFFECTIVE_BLOCKS [Lnet/minecraft/block/Block;
+accessible field net/minecraft/item/ShovelItem EFFECTIVE_BLOCKS [Lnet/minecraft/block/Block;

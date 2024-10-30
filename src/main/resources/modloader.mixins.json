@@ -1,0 +1,36 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.lassebq.modloader.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "AchievementsScreenMixin",
+    "AlphaWorldStorageMixin",
+    "BlockMixin",
+    "ClientNetworkHandlerMixin",
+    "CraftingResultSlotMixin",
+    "DimensionMixin",
+    "DisconnectPacketMixin",
+    "DisconnectedScreenMixin",
+    "DispenserBlockMixin",
+    "EntityRenderDispatcherMixin",
+    "FurnaceBlockEntityMixin",
+    "FurnaceResultSlotMixin",
+    "GameRendererMixin",
+    "InputPlayerEntityMixin",
+    "ItemEntityMixin",
+    "MinecraftMixin",
+    "PortalBlockMixin",
+    "RegionWorldStorageMixin",
+    "ResourceDownloadThreadMixin",
+    "ServerChunkCacheMixin",
+    "SurvivalInteractionManagerMixin",
+    "ToolItemMixin",
+    "WorldMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
