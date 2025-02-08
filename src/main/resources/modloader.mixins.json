@@ -28,7 +28,8 @@
     "ServerChunkCacheMixin",
     "SurvivalInteractionManagerMixin",
     "ToolItemMixin",
-    "WorldMixin"
+    "WorldMixin",
+    "PacketMixin"
   ],
   "injectors": {
     "defaultRequire": 1

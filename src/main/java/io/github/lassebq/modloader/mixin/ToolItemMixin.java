@@ -29,13 +29,15 @@ public class ToolItemMixin {
     @Inject(method = "<init>(IILnet/minecraft/item/Item__ToolMaterial;[Lnet/minecraft/block/Block;)V", at = @At("TAIL"))
     public void init(int id, int attackDamage, Item__ToolMaterial item__ToolMaterial, Block[] blocks, CallbackInfo ci) {
         toolBase = getToolBase();
-        effectiveBlocks = new Block[blocks.length + toolBase.mineBlocks.size()];
+        effectiveBlocks = new Block[blocks.length + (toolBase == null ? 0 : toolBase.mineBlocks.size())];
         int i = 0;
         for (Block b : blocks) {
             effectiveBlocks[i++] = b;
         }
-        for (BlockHarvestPower harvestPower : toolBase.mineBlocks) {
-            effectiveBlocks[i++] = Block.BY_ID[harvestPower.blockID];
+        if(toolBase != null) {
+            for (BlockHarvestPower harvestPower : toolBase.mineBlocks) {
+                effectiveBlocks[i++] = Block.BY_ID[harvestPower.blockID];
+            }
         }
     }
 

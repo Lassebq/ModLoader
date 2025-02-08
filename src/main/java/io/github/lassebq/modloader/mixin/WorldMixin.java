@@ -25,7 +25,9 @@ public class WorldMixin {
     public Dimension worldInit(int i, WorldStorage storage, String name, long seed, Dimension dimension) {
         if(this.data != null) {
             DimensionBase localDimensionBase = DimensionBase.getDimByNumber(this.data.getDimensionId());
-            return localDimensionBase.getWorldProvider();
+            if(localDimensionBase != null) {
+                return localDimensionBase.getWorldProvider();
+            }
         }
         return Dimension.fromId(i);
     }

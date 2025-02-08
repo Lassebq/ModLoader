@@ -7,7 +7,7 @@ plugins {
 archivesBaseName = "${modid}-${mod_version}"
 
 repositories {
-    mavenLocal()
+    // mavenLocal()
     maven {
         url 'https://stianloader.org/maven'
     }
@@ -16,6 +16,9 @@ repositories {
     }
     maven {
         url 'https://maven.glass-launcher.net/releases/'
+    }
+    maven {
+        url 'https://maven.fabricmc.net/'
     }
 }
 
@@ -61,9 +64,8 @@ dependencies {
     implementation "net.fabricmc:mapping-io:0.3.0"
     implementation "net.fabricmc:access-widener:2.1.0"
     implementation 'org.json:json:20240303'
-    implementation 'org.mcphackers.rdi:rdi:1.0'
-    implementation 'org.mcphackers:launchwrapper:1.0'
-    implementation 'org.mcphackers:launchwrapper-micromixin:1.0'
+    implementation 'org.mcphackers:launchwrapper:1.1'
+    implementation 'org.mcphackers:launchwrapper-micromixin:1.1'
     implementation "org.ow2.asm:asm:${project.asm_version}"
     implementation "org.ow2.asm:asm-util:${project.asm_version}"
     implementation "org.ow2.asm:asm-tree:${project.asm_version}"
