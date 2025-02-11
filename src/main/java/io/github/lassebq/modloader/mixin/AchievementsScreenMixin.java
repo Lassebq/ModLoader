@@ -113,7 +113,7 @@ public class AchievementsScreenMixin extends Screen {
     }
 
     @Overwrite
-    protected void renderIcons(int mouseX, int mouseY, float tickdelta) {
+    public void renderIcons(int mouseX, int mouseY, float tickdelta) {
         int var4 = MathHelper.floor(this.mouseX + (this.scaledMouseDx - this.mouseX) * (double) tickdelta);
         int var5 = MathHelper.floor(this.mouseY + (this.scaledMouseDy - this.mouseY) * (double) tickdelta);
         if (var4 < MIN_COLUMN) {
